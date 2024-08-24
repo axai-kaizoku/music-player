@@ -31,6 +31,8 @@ const App = () => {
 export default function RootLayout() {
 	const [loaded] = useFonts({
 		Geist: require('../assets/fonts/GeistRegular.ttf'),
+		GeistBold: require('../assets/fonts/GeistBold.ttf'),
+		GeistSemiBold: require('../assets/fonts/Geist-SemiBold.ttf'),
 	});
 
 	useEffect(() => {
