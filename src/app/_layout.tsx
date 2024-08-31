@@ -1,11 +1,12 @@
+import { defaultStyles } from '@/styles';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
 	return (
-		<SafeAreaProvider>
+		<SafeAreaProvider style={defaultStyles.container}>
 			<RootNavigation />
 			<StatusBar style="auto" />
 		</SafeAreaProvider>
